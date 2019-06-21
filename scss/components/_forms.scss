@@ -1,0 +1,12 @@
+.form {
+    @extend %form-styles;
+    @include flex-column;
+     
+    .form__label--hidden {
+        visibility: hidden;
+    }
+    .headline--secondary {
+        @extend %--secondary;
+        width: 100%;
+    }
+}

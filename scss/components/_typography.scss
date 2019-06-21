@@ -1,4 +1,33 @@
+.container {
+    @include flex-column;
+}
+
+.card {
+    p {
+        @extend %p-styles;
+       
+    }
+    .headline {
+        &--primary {
+            @extend %--primary;
+        }
+    
+        &--secondary {
+            @extend %--secondary;
+        }
+    }
+}
+
+
+
 .link {
+    @extend %link;
     color: $secondary-color;
-    text-decoration: none;
+    font-weight: $bold;
+
+}
+
+.blockquote {
+    @extend %blockquote-styles;
+
 }

@@ -1,0 +1,13 @@
+
+.nav {
+    @include flex-column;
+    @extend %ul-styles;
+    .nav__item {
+        @extend %li-styles;        
+        a {
+            @extend %a-styles;
+        }
+
+    }
+
+}

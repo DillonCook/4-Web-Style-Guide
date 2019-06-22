@@ -42,7 +42,7 @@
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
 
-          // base stlyes applied to all grid columns
+          // base styles applied to all grid columns
           margin-top: 0;
 
           // make column width a percentage of the column number / total columns
@@ -53,18 +53,21 @@
   }
 }
 .grid__col--6,
-.grid__col--12 {
+.grid__col--12,
+.grid__col--3 {
   @include flex-column;
 }
 
 .grid__row {
   padding: 0;
+  @extend %grid-styles;
 }
 
 .container,
 .grid__row,
 .grid__col--1,
 .grid__col--2,
+.grid__col--3,
 .grid__col--4,
 .grid__col--5,
 .grid__col--6,

@@ -346,6 +346,26 @@ template {
   margin: auto;
 }
 
+.btn--default {
+  background-color: #4DDEFF;
+}
+
+.btn--success {
+  background-color: rgba(0, 128, 0, 0.75);
+}
+
+.btn--error {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+
+.btn--warning {
+  background-color: rgba(255, 81, 0, 0.75);
+}
+
+.btn--info {
+  background-color: rgba(121, 15, 182, 0.75);
+}
+
 .nav .nav__item a {
   color: black;
   font-family: "Open Sans", sans-serif;
@@ -475,24 +495,45 @@ template {
   font-family: "Open Sans", sans-serif;
 }
 
-.grid__row:nth-of-type(5) .grid__col--12 .theme__colors .theme__colors#4DDEFF {
-  background-color: #4DDEFF, green, red, orange, #790fb6;
+.grid__row:nth-of-type(6), .grid__row:nth-of-type(7), .grid__row:nth-of-type(8), .grid__row:nth-of-type(9), .grid__row:nth-of-type(10), .grid__row:nth-of-type(11), .grid__row:nth-of-type(12) {
+  width: 95%;
+  padding: 5px 0;
+  margin: 25px auto;
 }
 
-.grid__row:nth-of-type(5) .grid__col--12 .theme__colors .theme__colorsgreen {
-  background-color: #4DDEFF, green, red, orange, #790fb6;
+.grid__row:nth-of-type(6) .theme__colors, .grid__row:nth-of-type(7) .theme__colors, .grid__row:nth-of-type(8) .theme__colors, .grid__row:nth-of-type(9) .theme__colors, .grid__row:nth-of-type(10) .theme__colors, .grid__row:nth-of-type(11) .theme__colors, .grid__row:nth-of-type(12) .theme__colors {
+  padding: 12px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  color: #636363;
 }
 
-.grid__row:nth-of-type(5) .grid__col--12 .theme__colors .theme__colorsred {
-  background-color: #4DDEFF, green, red, orange, #790fb6;
+.grid__row:nth-of-type(6) .grid__col--12, .grid__row:nth-of-type(7) .grid__col--12, .grid__row:nth-of-type(8) .grid__col--12, .grid__row:nth-of-type(9) .grid__col--12, .grid__row:nth-of-type(10) .grid__col--12, .grid__row:nth-of-type(11) .grid__col--12, .grid__row:nth-of-type(12) .grid__col--12 {
+  background-color: #5CE3C3;
 }
 
-.grid__row:nth-of-type(5) .grid__col--12 .theme__colors .theme__colorsorange {
-  background-color: #4DDEFF, green, red, orange, #790fb6;
+.grid__row:nth-of-type(6) .grid__col--6, .grid__row:nth-of-type(7) .grid__col--6, .grid__row:nth-of-type(8) .grid__col--6, .grid__row:nth-of-type(9) .grid__col--6, .grid__row:nth-of-type(10) .grid__col--6, .grid__row:nth-of-type(11) .grid__col--6, .grid__row:nth-of-type(12) .grid__col--6 {
+  background-color: rgba(20, 98, 161, 0.753);
 }
 
-.grid__row:nth-of-type(5) .grid__col--12 .theme__colors .theme__colors#790fb6 {
-  background-color: #4DDEFF, green, red, orange, #790fb6;
+.grid__row:nth-of-type(6) .grid__col--4, .grid__row:nth-of-type(7) .grid__col--4, .grid__row:nth-of-type(8) .grid__col--4, .grid__row:nth-of-type(9) .grid__col--4, .grid__row:nth-of-type(10) .grid__col--4, .grid__row:nth-of-type(11) .grid__col--4, .grid__row:nth-of-type(12) .grid__col--4 {
+  background-color: #4DDEFF;
+}
+
+.grid__row:nth-of-type(6) .grid__col--3, .grid__row:nth-of-type(7) .grid__col--3, .grid__row:nth-of-type(8) .grid__col--3, .grid__row:nth-of-type(9) .grid__col--3, .grid__row:nth-of-type(10) .grid__col--3, .grid__row:nth-of-type(11) .grid__col--3, .grid__row:nth-of-type(12) .grid__col--3 {
+  background-color: #cda1ff;
+}
+
+.grid__row:nth-of-type(6) .grid__col--5, .grid__row:nth-of-type(7) .grid__col--5, .grid__row:nth-of-type(8) .grid__col--5, .grid__row:nth-of-type(9) .grid__col--5, .grid__row:nth-of-type(10) .grid__col--5, .grid__row:nth-of-type(11) .grid__col--5, .grid__row:nth-of-type(12) .grid__col--5 {
+  background-color: rgba(60, 221, 60, 0.726);
+}
+
+.grid__row:nth-of-type(6) .grid__col--7, .grid__row:nth-of-type(7) .grid__col--7, .grid__row:nth-of-type(8) .grid__col--7, .grid__row:nth-of-type(9) .grid__col--7, .grid__row:nth-of-type(10) .grid__col--7, .grid__row:nth-of-type(11) .grid__col--7, .grid__row:nth-of-type(12) .grid__col--7 {
+  background-color: rgba(255, 93, 120, 0.76);
+}
+
+.grid__row:nth-of-type(6) .grid__col--8, .grid__row:nth-of-type(7) .grid__col--8, .grid__row:nth-of-type(8) .grid__col--8, .grid__row:nth-of-type(9) .grid__col--8, .grid__row:nth-of-type(10) .grid__col--8, .grid__row:nth-of-type(11) .grid__col--8, .grid__row:nth-of-type(12) .grid__col--8 {
+  background-color: rgba(255, 136, 0, 0.842);
 }
 
 .grid__row {
@@ -684,7 +725,8 @@ template {
 }
 
 .grid__col--6,
-.grid__col--12 {
+.grid__col--12,
+.grid__col--3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,6 +747,7 @@ template {
 .grid__row,
 .grid__col--1,
 .grid__col--2,
+.grid__col--3,
 .grid__col--4,
 .grid__col--5,
 .grid__col--6,

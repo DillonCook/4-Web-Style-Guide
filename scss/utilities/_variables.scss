@@ -6,16 +6,31 @@ $black: black;
 $white: white;
 $darkgray:rgb(99, 99, 99);
 
-$color-map: 
-        $secondary-color, 
-        green, 
-        red, 
-        orange, 
-        rgb(121, 15, 182);
-
 $light: 100;
 $bold: 700;
 $size: 50%;
 
 $font-primary: 'Open Sans', sans-serif;
 $font-headline: 'Noto Serif', serif;
+
+//Maps
+
+$color-map: (
+        btn--default: $secondary-color, 
+        btn--success: rgba(0, 128, 0, 0.75), 
+        btn--error: rgba(255, 0, 0, 0.75), 
+        btn--warning: rgba(255, 81, 0, 0.75), 
+        btn--info: rgba(121, 15, 182, 0.75)
+        );
+
+
+$grid-system-map: (
+        grid__col--12: $primary-color,
+        grid__col--6: rgba(20, 98, 161, 0.753),
+        grid__col--4: $secondary-color,
+        grid__col--3: rgb(205, 161, 255),
+        grid__col--5: rgba(60, 221, 60, 0.726),
+        grid__col--7: rgba(255, 93, 120, 0.76),
+        grid__col--8: rgba(255, 136, 0, 0.842)
+
+);

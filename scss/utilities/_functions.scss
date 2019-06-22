@@ -1,0 +1,6 @@
+@each $class, $color in $color-map {
+    .#{$class} {
+    background-color: $color;
+    }
+}
+

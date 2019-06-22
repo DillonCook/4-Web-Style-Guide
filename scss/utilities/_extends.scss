@@ -122,10 +122,33 @@
     color: $white;
     text-transform: uppercase;
     font-family: $font-primary;
+}
 
-    @each $color in $color-map {
-        .theme__colors#{$color} {
-        background-color: $color-map;
+// Grid System
+
+%grid-styles {
+    &:nth-of-type(6),
+    &:nth-of-type(7),
+    &:nth-of-type(8),
+    &:nth-of-type(9),
+    &:nth-of-type(10),
+    &:nth-of-type(11),
+    &:nth-of-type(12) {
+        width: 95%;
+        padding: 5px 0;
+        margin: 25px auto;
+        
+        .theme__colors {
+            padding: 12px;
+            border-radius: 5px;
+            font-family: $font-primary;
+            color: $darkgray;
+        }
+
+        @each $col, $color in $grid-system-map {
+            .#{$col} {
+                background-color: $color;
+            }
         }
     }
 }

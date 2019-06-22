@@ -5,7 +5,6 @@
 .card {
     p {
         @extend %p-styles;
-       
     }
     .headline {
         &--primary {
@@ -14,9 +13,13 @@
     
         &--secondary {
             @extend %--secondary;
+            width: 80%;
+            margin-bottom: 0;
         }
     }
 }
+
+
 
 
 

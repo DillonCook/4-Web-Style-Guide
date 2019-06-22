@@ -1,0 +1,12 @@
+.grid__row:nth-of-type(5) {
+    
+    .grid__col--12 {
+        .theme__colors {
+            @extend %button-styles;
+
+        }
+        
+    }
+    
+    
+}

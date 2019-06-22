@@ -7,7 +7,8 @@
     }
     .headline--secondary {
         @extend %--secondary;
-        width: 100%;
+        width: 90%;
+        margin-bottom: 0;
     }
     .img--avatar {
         width: $size;

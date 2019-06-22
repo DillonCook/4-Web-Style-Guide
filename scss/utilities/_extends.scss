@@ -24,13 +24,13 @@
  }
 
 %ul-styles {
-    width: 400px;
-    margin: 20px auto;
+    width: 85%;
+    margin: 20px auto 40px;
     padding: 0;
 }
 
 %p-styles {
-    width: 80%;
+    width: 85%;
     color: $darkgray;
     font-family: $font-primary;
     padding: 30px 0;
@@ -44,15 +44,14 @@
     color: $primary-color;
     font-family: $font-headline;
     margin: 20px auto;
-    text-align: center;
 }
 
 %--secondary {
     font-family: $font-headline;
     color: $darkgray;
     font-weight: $light;
-    margin-top: 20px;
-    width: 80%;
+    margin: 40px auto;
+    width: 90%;
 }
 
 // Link
@@ -78,13 +77,14 @@
 //Forms
 
 %form-styles {
-    width: 80%;
+    margin: auto;
+    width: 90%;
     .form__input {
         border: none;
         border-bottom: 5px solid $primary-color;
         font-family: $font-primary;
-        height: 30px;
-        width: 95%;
+        height: 35px;
+        width: 90%;
         margin: auto;
         &::placeholder {
             color: $darkgray;
@@ -92,9 +92,40 @@
             line-height: center;
         }        
     }
+    .btn--default {
+        border: none;
+        margin: 20px 0;
+        padding: 10px 0;
+        border-radius: 5px;
+        background-color: $secondary-color;
+        color: $white;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        font-weight: $bold;
+        width: 100%;
+    }
 }
 
 //Images
 %img-styles {
     width: 50%;
+}
+
+// Buttons
+
+%button-styles {
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px 0;
+    border-radius: 5px;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-primary;
+
+    @each $color in $color-map {
+        .theme__colors#{$color} {
+        background-color: $color-map;
+        }
+    }
 }

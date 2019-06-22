@@ -6,9 +6,16 @@ $black: black;
 $white: white;
 $darkgray:rgb(99, 99, 99);
 
+$color-map: 
+        $secondary-color, 
+        green, 
+        red, 
+        orange, 
+        rgb(121, 15, 182);
+
 $light: 100;
 $bold: 700;
-$size: 45%;
+$size: 50%;
 
 $font-primary: 'Open Sans', sans-serif;
 $font-headline: 'Noto Serif', serif;

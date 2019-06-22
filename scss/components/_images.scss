@@ -1,0 +1,15 @@
+.img--frame {
+    margin: auto;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+.img--avatar {
+    margin: 0 auto;
+}
+
+.headline--secondary {
+    @extend %--secondary;
+}

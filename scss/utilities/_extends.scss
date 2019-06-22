@@ -2,7 +2,6 @@
 
 
 %a-styles {
-     text-decoration: none;
      color: $black;
      font-family: $font-primary;
      width: 100%;
@@ -31,7 +30,7 @@
 }
 
 %p-styles {
-    width: 85%;
+    width: 80%;
     color: $darkgray;
     font-family: $font-primary;
     padding: 30px 0;
@@ -53,7 +52,7 @@
     color: $darkgray;
     font-weight: $light;
     margin-top: 20px;
-    width: 85%;
+    width: 80%;
 }
 
 // Link
@@ -66,7 +65,7 @@
 
 %blockquote-styles {
     width: 60%;
-    padding: 0 10px;
+    padding-left: 20px;
     font-size: 1.5em;
     border-radius: 4px;
     border-left: 7px solid $primary-color;
@@ -79,5 +78,23 @@
 //Forms
 
 %form-styles {
-    width: 400px;
+    width: 80%;
+    .form__input {
+        border: none;
+        border-bottom: 5px solid $primary-color;
+        font-family: $font-primary;
+        height: 30px;
+        width: 95%;
+        margin: auto;
+        &::placeholder {
+            color: $darkgray;
+            text-indent: 15px;
+            line-height: center;
+        }        
+    }
+}
+
+//Images
+%img-styles {
+    width: 50%;
 }

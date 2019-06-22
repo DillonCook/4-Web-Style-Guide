@@ -6,6 +6,7 @@
         @extend %li-styles;        
         a {
             @extend %a-styles;
+            @extend %link;
         }
 
     }

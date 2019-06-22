@@ -347,7 +347,6 @@ template {
 }
 
 .nav .nav__item a {
-  text-decoration: none;
   color: black;
   font-family: "Open Sans", sans-serif;
   width: 100%;
@@ -377,7 +376,7 @@ template {
 }
 
 .card p {
-  width: 85%;
+  width: 80%;
   color: #636363;
   font-family: "Open Sans", sans-serif;
   padding: 30px 0;
@@ -394,18 +393,18 @@ template {
 .card .headline--secondary, .form .headline--secondary {
   font-family: "Noto Serif", serif;
   color: #636363;
-  font-weight: 200;
+  font-weight: 100;
   margin-top: 20px;
-  width: 85%;
+  width: 80%;
 }
 
-.link {
+.link, .nav .nav__item a {
   text-decoration: none;
 }
 
 .blockquote {
   width: 60%;
-  padding: 0 10px;
+  padding-left: 20px;
   font-size: 1.5em;
   border-radius: 4px;
   border-left: 7px solid #5CE3C3;
@@ -416,7 +415,40 @@ template {
 }
 
 .form {
-  width: 400px;
+  width: 80%;
+}
+
+.form .form__input {
+  border: none;
+  border-bottom: 5px solid #5CE3C3;
+  font-family: "Open Sans", sans-serif;
+  height: 30px;
+  width: 95%;
+  margin: auto;
+}
+
+.form .form__input::-webkit-input-placeholder {
+  color: #636363;
+  text-indent: 15px;
+  line-height: center;
+}
+
+.form .form__input:-ms-input-placeholder {
+  color: #636363;
+  text-indent: 15px;
+  line-height: center;
+}
+
+.form .form__input::-ms-input-placeholder {
+  color: #636363;
+  text-indent: 15px;
+  line-height: center;
+}
+
+.form .form__input::placeholder {
+  color: #636363;
+  text-indent: 15px;
+  line-height: center;
 }
 
 .grid__row {
@@ -607,6 +639,10 @@ template {
   }
 }
 
+.grid__col--4 {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
@@ -628,7 +664,7 @@ template {
 
 .link {
   color: #4DDEFF;
-  font-weight: 650;
+  font-weight: 700;
 }
 
 .form {
@@ -650,6 +686,11 @@ template {
 
 .form .headline--secondary {
   width: 100%;
+}
+
+.form .img--avatar {
+  width: 45%;
+  margin: 20px auto;
 }
 
 .nav {

@@ -53,6 +53,10 @@
   }
 }
 
+.grid__col--4 {
+  width: 100%;
+}
+
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns

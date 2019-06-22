@@ -9,4 +9,8 @@
         @extend %--secondary;
         width: 100%;
     }
+    .img--avatar {
+        width: $size;
+        margin: 20px auto;
+    }
 }

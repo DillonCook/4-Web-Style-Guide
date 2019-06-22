@@ -1,3 +1,9 @@
+.container {
+    @include for-medium-screens {
+        width: 85%;
+        margin: 40px auto;
+    }
+}
 
 .nav {
     @include flex-column;
@@ -9,4 +15,12 @@
             @extend %link;
         }
     }
+    @include for-medium-screens {
+        @include flex-row;
+        width: 70%;
+    }
+    @include for-large-screens {
+        width: 60%;
+    }
 }
+

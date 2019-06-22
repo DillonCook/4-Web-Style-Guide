@@ -1,5 +1,23 @@
-@mixin flex-column{
+@mixin flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin for-medium-screens {
+    @media (min-width: $med) {
+        @content;
+    }
+}
+
+@mixin for-large-screens {
+    @media (min-width: $lg) {
+        @content;
+    }
 }

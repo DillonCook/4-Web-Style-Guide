@@ -3,10 +3,23 @@
     .grid__col--12 {
         .theme__colors {
             @extend %button-styles;
-
+            
         }
-        
+
+        @include for-large-screens {
+            @include flex-row;
+            .theme__colors {
+                width: 15%;
+            }
+            .btn--info {
+                width: 12%;
+            }
+            .btn--error {
+                width: 13%;
+            }
+        }
     }
-    
-    
+    @include for-large-screens {
+        width: 88%;
+    }
 }

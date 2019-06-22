@@ -4,10 +4,16 @@
     border: 1px solid lightgray;
     margin-bottom: 20px;
     width: 85%;
+    @include for-large-screens {
+        width: 55%;
+    }
 }
 
 .img--avatar {
     margin: 0 auto;
+    @include for-large-screens {
+        width: 30%;
+    }
 }
 
 .headline--secondary {
